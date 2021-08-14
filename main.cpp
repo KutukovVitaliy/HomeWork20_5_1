@@ -32,6 +32,6 @@ int main() {
     }while (!ValueTrue);
     std::ofstream PaymentFile("../PaymentFile.txt",std::ios::app);
     PaymentFile << FirstName << " " << LastName << " " << DateOfPayment << " " << Payment << std::endl;
-
+    PaymentFile.close();
     return 0;
 }
